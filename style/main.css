@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+#home form{
+    background-color: #0B3954;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    align-items: center;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    
+}
+.subjects-con {
+    width: 300px;
+}
+#home #logo-h1{
+    font-family: "Afacad", helvetica ,sans-serif;
+    text-transform: uppercase;
+    color: #29E7CD;
+    font-weight: 900;
+    font-size: 20px;
+}
+#home #logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#home #google-button, #home #facebook-button{
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    height: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 230px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#home #google-button div, #home #facebook-button div{
+    width: 75%;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+#dashboard #menu{
+    background-color: #49111C;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#dashboard{
+    display: flex;
+    height: 100vh;
+}
+#menu #profile{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    gap: 10px;
+    font-weight: 700;
+    margin: 25px;
+}
+
+#menu #logout{
+    display: flex;
+    gap: 10px;
+    color: #fff;
+    font-family:  Helvetica, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+body{
+    margin: 0;
+    font-family: 'inter', Helvetica, sans-serif;
+}
+#profile-name{
+    text-transform: capitalize;
+}
+#profile-img {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    border-radius: 50%; /* Make it circular */
+    background-position: center;
+    background-size: cover; /* Cover the entire area */
+     /* Center the image */
+}
+#subjects{
+
+display: grid;
+grid-template: 1fr/repeat(2,1fr);
+gap: 10px;
+
+}
+#back-to-home{
+    cursor: pointer;
+    background-color: #0B3954;
+    color: #fff;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#dashboard #content{
+    width:75%;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    overflow: scroll;
+}
+#dashboard #QuizPage{
+   display: none;
+    width:75%;
+    padding: 4%;
+    flex-direction: column;
+    overflow: scroll;
+    background-color: #d4d5d6;
+}
+
+#QuizPage #questions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#submit-button{
+    background-color: #0B3954;
+    color: #fff;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-family: 'inter', Helvetica, sans-serif;
+    margin-top: 20px;
+}
+#complete-icon {
+    height: 150px;
+    width: 150px;
+}
+#viewScore{
+    display: none;
+    flex-direction: column;
+   align-items: center;
+   gap: 40px;
+   width: 75%;
+   padding: 4%;
+}
+#quizbacktohome{
+    cursor: pointer;
+    background-color: #0B3954;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#showAnswers{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#completed{
+    font-weight: 600;
+}
+#quizScore{
+    font-size: 20px;
+}
+#dashboard-profile-img{
+    height: 50px;
+    width: 50px;
+    background-position: cover;
+    background-size: cover;
+    border-radius: 100px;
+}   
+#dashboard-profile{
+    display: none;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width: 1000px){
+    #subjects .subjects-con{
+      width: 200px;
+    font-size: 15px;
+    }
+ }
+ @media screen and (max-width: 922px) {
+    #profile-img{
+        height: 30px;
+        width: 30px;
+    }
+    #profile-name {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    #logout{
+        font-size: 14px;
+    }
+ }
+ @media screen and (max-width: 765px) {
+    #dashboard #QuizPage{
+       box-sizing: border-box;
+        width: 100%;
+     }
+     #back-to-home{
+        width: 100px;
+        font-size: 12px;
+     }
+    #dashboard{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    #dashboard #content{
+        box-sizing: border-box;
+        width: 100%;
+        overflow: hidden;
+    }
+    #menu #profile{
+        display: none;
+    }
+    #dashboard #menu{
+        width: 100%;
+    }
+    #dashboard-profile{
+        display: flex;
+    }
+    #select-this-subjects,#subjects{
+        align-self: center;
+    }
+    #select-this-subjects{
+        margin-right: 340px
+    }
+ }
+ @media screen and (max-width:654px){
+    #dashboard #content{
+        overflow: scroll;
+    }
+  
+    #dashboard-profile{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    #subjects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #select-this-subjects{
+        align-self: center;
+        margin-right: 90px;
+    }
+    #dashboard-profile-img{
+
+        height: 40px;
+        width: 40px;}
+
+ }
+ #loading-screen{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+ }
+ #loading-icon{
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-image: url(../src/images/icons/loading.gif);
+ }
+ #loading-icon-quiz{
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-image: url(../src/images/icons/loading.gif);
+ }
+ #quiz-loading-screen{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 75%;
+    background-color: #fff;
+   }
+
+@media screen and (max-width: 400px) {
+    #home form{
+        width: 250px;
+    }
+    #home #google-button{
+        width: 200px;
+    }
+}
